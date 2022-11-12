@@ -1,0 +1,50 @@
+.primary-heading{
+    text-align: center;
+    padding: 3rem 0;
+    color: $tertiary-color;
+
+    &::after{
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 70px;
+        height: 3px;
+        background-color: $primary-color;
+    }
+
+    @include media(540px){
+        font-size: 1.5rem;
+    }
+}
+
+.Name{
+    color: $primary-color;
+    font-size: 2.2rem;
+    padding-bottom: .8rem;
+
+    @include media(540px){
+       font-size: 1.5rem;
+      
+    }
+}
+.proffesion{
+    color: $fourth-color;
+    font-weight: 600;
+    padding-bottom: 1rem;
+
+    @include media(540px){
+        font-size: .9rem;
+       
+     }
+}
+
+.about-me{
+    color: $fourth-color;
+    font-weight: 600;
+    line-height: 1.8rem;
+
+    @include media(540px){
+        font-size: .9rem;
+       
+     }
+}

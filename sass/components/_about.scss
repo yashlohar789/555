@@ -1,0 +1,42 @@
+.about{
+
+    &__img{
+        overflow: hidden;
+        flex-basis: 15.75rem;
+        background-image: radial-gradient(circle, #0e5dd2, #006dda, #007ce1, #008ae7, #1298eb);
+        height: 15.75rem;
+        border-radius: 50%;
+
+        @include media(767px){
+            margin: 2rem auto;
+        }
+
+        img{
+            width: 100%;
+            margin-left: 11%;
+            margin-top: -6%;
+        }
+    }
+
+    &__profile{
+        flex-basis: 55%;
+
+        @include media(767px){
+            flex-basis:100%;
+            text-align: center;
+          
+        }
+
+        .fab,.fas{
+            font-size: 1.5rem;
+            color: $fourth-color;
+            padding-right: 1.1rem;
+            margin: 1.3rem 0;
+
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
+
+}

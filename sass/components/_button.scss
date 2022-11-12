@@ -1,0 +1,24 @@
+.btn{
+    display: inline-block;
+    background-image:radial-gradient(circle, #0e5dd2, #006dda, #007ce1, #008ae7, #1298eb);
+    text-decoration: none;
+    color: $secondry-color;
+    padding: 10px 15px;
+    font-weight:600;
+    margin-right: 1rem;
+    transition: all .1s linear;
+    outline: none;
+    border: none;
+    font-family:$primary-font;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+
+    &:hover{
+        background-image:none;
+        background-color:$tertiary-color;
+        color:$secondry-color;
+        font-weight:600;
+    }
+}

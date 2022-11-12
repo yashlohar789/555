@@ -1,0 +1,66 @@
+.footer-section{
+    padding: 2rem 0;
+    background-color: $tertiary-color;
+
+    .contact{
+        @include inner;
+        @include flex;
+        justify-content: space-between;
+        padding:1rem 8rem 1rem 12rem;
+          
+        @include media(1000px){
+            padding: 0rem 5rem 0rem 5rem;
+        }
+    
+        @include media(768px){
+            padding: 0rem 1rem 0rem 1rem;
+        }
+
+        &__about{
+            flex-basis: 20%;
+
+            @include media(768px){
+                flex-basis: 45%;
+                margin-bottom: 3rem;
+            }
+
+            @include media(540px){
+                flex-basis: 100%;
+            }
+
+            h1{
+                color: $secondry-color;
+                font-size: 1.3rem;
+                font-weight: 500;
+                padding-bottom: .8rem;
+
+                &.name{
+                    border-bottom: 2px solid $secondry-color;
+                }
+            }
+
+            p{
+                color: $secondry-color;
+                padding: .8rem 0;
+                font-size: .9rem;
+                line-height: 1.5rem;
+
+                span{
+                    margin-right: 1rem;
+                    font-size: 1.3rem;
+                }
+
+                a{
+                    color: $secondry-color;
+                    text-decoration: none;
+                }
+            }
+
+            span{
+                color: $secondry-color;
+                font-size: 1.3rem;
+                padding-right:1rem;
+            }
+        }
+    }
+}
